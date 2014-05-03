@@ -46,9 +46,9 @@ $background-color: #fff;
 
          &.wm-rt-fixed-header {
             z-index: 3;
-            display: block;
+            display: none;
             overflow: hidden;
-            position: absolute;
+            position: fixed;
             border: none;
             top: 0;
 
@@ -59,10 +59,6 @@ $background-color: #fff;
             tbody {
                visibility: hidden;
                pointer-events: none;
-            }
-
-            &.wm-rt-fixed {
-               position: fixed;
             }
          }
       }

@@ -1,4 +1,4 @@
-(function (window, document, jQuery, undefined) {
+(function (window, document, undefined) {
     "use strict";
 
     function wmResponsiveTable(tableEle, options) {
@@ -28,10 +28,8 @@
     }
 
     function handleHeader(tableEle, options) {
-        var tableRect,
+        var tableRect, tableIsBelowFold,
             fixedHeadTableEle = null,
-            isFixed = false,
-            fixedClass = ' wm-rt-fixed ',
             headEle = tableEle.getElementsByTagName('thead')[0],
             headerIsFixed = getWithDefault(options, 'fixedHeader', true);
 
@@ -42,17 +40,8 @@
             if (headerIsFixed) {
                 onDocumentScroll(function () {
                     tableRect = tableEle.getBoundingClientRect();
-                    if (tableRect.top < 0 && tableRect.bottom > 0) {
-                        if (!isFixed) {
-                            fixedHeadTableEle.className += fixedClass;
-                            isFixed = true;
-                        }
-                    } else {
-                        if (isFixed) {
-                            fixedHeadTableEle.className = fixedHeadTableEle.className.replace(fixedClass, '');
-                            isFixed = false;
-                        }
-                    }
+                    tableIsBelowFold = tableRect.top < 0 && tableRect.bottom > 0;
+                    fixedHeadTableEle.style.display = tableIsBelowFold ? 'block' : 'none';
                 });
             }
 
