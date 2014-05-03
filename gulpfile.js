@@ -26,7 +26,7 @@ gulp.task('scripts', function() {
     return gulp.src('src/**/*.js')
         .pipe(jshint('.jshintrc'))
         .pipe(jshint.reporter('default'))
-        .pipe(concat('tables.js'))
+        .pipe(concat('wm-responsive-table.js'))
         .pipe(gulp.dest(dest))
         .pipe(rename({suffix: '.min'}))
         .pipe(uglify())

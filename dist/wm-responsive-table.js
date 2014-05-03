@@ -102,16 +102,15 @@
         return options[key] === undefined ? def : options[key];
     }
 
-
-    if ( window.jQuery || window.Zepto ) {
-        (function ($) {
+    (function ($) {
+        if ($) {
             $.fn.wmResponsiveTable = function (options) {
                 return this.each(function () {
                     wmResponsiveTable(this, options);
                 });
-            }
-        })(window.jQuery || window.Zepto)
-    }
+            };
+        }
+    })(window.jQuery || window.Zepto);
 
     window.wmResponsiveTable = wmResponsiveTable;
 

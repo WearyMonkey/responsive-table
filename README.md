@@ -1,7 +1,7 @@
 # Responsive Table
 
 Responsive data tables that work on mobile devices. Works by making the table header and left columns sticky while
-the use can scroll the other columns horizontaly.
+the use can scroll the other columns horizontally.
 
 ## Demos
 
