@@ -31,7 +31,7 @@ OR download the files under ```dist```
 ```html
 <head>
     ...
-    <link rel="stylesheet" type="text/css" href="bower-components/wm-responsive-table/dist/wm-responsive-table.css">
+    <link rel="stylesheet" type="text/css" href="bower_components/wm-responsive-table/dist/wm-responsive-table.css">
     ...
 </head>
 ```
@@ -39,7 +39,7 @@ OR download the files under ```dist```
 3. Include JavaScript
 
 ```html
- <script src="bower-components/wm-responsive-table/dist/wm-responsive-table.js"></script>
+ <script src="bower_components/wm-responsive-table/dist/wm-responsive-table.js"></script>
 ```
 
 If you are using jQuery, make sure you include wm-responsive-table after jQuery for the plugin to work.
