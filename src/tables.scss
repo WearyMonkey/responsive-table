@@ -1,0 +1,70 @@
+$background-color: #fff;
+
+.wm-rt-fixed-cols {
+   display: none;
+}
+
+.wm-rt-fixed-header {
+   display: none;
+}
+
+@media only screen and (min-width : 320px) and (max-width : 480px) {
+
+   .wm-rt-container {
+      position: relative;
+      z-index: 0;
+
+      table {
+         max-width: 100%;
+         td {
+            background-color: $background-color;
+         }
+
+         &.wm-rt-scroll-cols {
+            z-index: 1;
+            position: relative;
+            display: block;
+            overflow-x: auto;
+         }
+
+         &.wm-rt-fixed-cols {
+            display: block;
+            position: absolute;
+            overflow-x: hidden;
+            pointer-events: none;
+            top: 0;
+            z-index: 2;
+
+            .wm-rt-pinned-col {
+               position: relative;
+            }
+
+            .wm-rt-scroll-col {
+               visibility: hidden;
+            }
+         }
+
+         &.wm-rt-fixed-header {
+            z-index: 3;
+            display: block;
+            overflow: hidden;
+            position: absolute;
+            border: none;
+            top: 0;
+
+            thead {
+               background-color: $background-color;
+            }
+
+            tbody {
+               visibility: hidden;
+               pointer-events: none;
+            }
+
+            &.wm-rt-fixed {
+               position: fixed;
+            }
+         }
+      }
+   }
+}

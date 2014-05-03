@@ -1,0 +1,35 @@
+.container {
+    max-width: 600px;
+    padding: 1em;
+}
+
+table {
+    border-collapse:collapse;
+}
+
+table > thead {
+    vertical-align: bottom;
+    font-weight: bold;
+}
+
+table > thead > tr.header-bottom > td {
+    border-bottom: 4px solid red;
+    text-align: center;
+}
+
+table > thead > tr > td.header-title {
+    border-bottom: 1px solid red !important;
+}
+
+table > tbody > tr > td:first-child {
+    white-space: nowrap;
+    border-right: 1px solid #bfbfbf;
+}
+
+table > tbody > tr > td {
+    padding: 0 1em;
+}
+
+tr.divider {
+    border-bottom: 1px solid #bfbfbf;
+}
