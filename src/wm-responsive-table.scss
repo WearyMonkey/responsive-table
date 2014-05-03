@@ -1,5 +1,7 @@
 $background-color: #fff;
 
+// hide the extra tables by default
+
 .wm-rt-fixed-cols {
    display: none;
 }
@@ -8,6 +10,8 @@ $background-color: #fff;
    display: none;
 }
 
+// currently we ignore everything when screen is wider > 480px
+// this helps with older browsers, but we should do this more gracefully
 @media only screen and (max-width : 480px) {
 
    .wm-rt-container {
@@ -40,6 +44,7 @@ $background-color: #fff;
             }
 
             .wm-rt-scroll-col {
+               // we use visibility: hidden instead of display: none so the table layouts don't change
                visibility: hidden;
             }
          }
