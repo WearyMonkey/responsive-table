@@ -5,7 +5,7 @@ the use can scroll the other columns horizontally.
 
 ## Demos
 
-* todo
+* [Simple Data Table](https://rawgithub.com/WearyMonkey/responsive-table/master/examples/example.html)
 
 ## Features
 
@@ -14,6 +14,7 @@ the use can scroll the other columns horizontally.
 * Tiny, 2kb  minified, 1kb gzipped.
 * No dependencies (jQuery not required)
 * jQuery/Zepto plugin support (only if jQuery/Zepto is present)
+* Has no effect when the page is wider than 480px
 
 ## Installation
 
