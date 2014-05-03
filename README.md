@@ -24,9 +24,7 @@ the use can scroll the other columns horizontaly.
 ```html
 <head>
     .
-    .
     <link rel="stylesheet" type="text/css" href="bower-components/wm-responsive-table/dist/wm-responsive-table.css">
-    .
     .
 </head>
 ```
@@ -38,6 +36,17 @@ the use can scroll the other columns horizontaly.
 ```
 
 If you are using jQuery, make sure you include wm-responsive-table after jQuery for the plugin to work.
+
+## Usage
+
+#### Options
+
+wmResponsiveTable can takes an option object of key/value settings:
+
+* **pinnedColumns** Integer *(default:1, optional)* - The amount of columns that will be pinned to the left
+* **fixedHeader** Boolean *(default:true, optional)* - If true, the thead element of the table will stick to the top of the browser window when the user has scrolled past the top of the table.
+
+#### Example
 
 ```html
 <table id="my-table">
@@ -53,26 +62,21 @@ If you are using jQuery, make sure you include wm-responsive-table after jQuery 
 </table>
 ```
 
-## Usage
-
-#### Options
-
-wmResponsiveTable can takes an option object of key/value settings:
-
-* **pinnedColumns** Integer *(default:1)* - The amount of columns that will be pinned to the left
-* **fixedHeader** Boolean *(default:true)* - if true, the thead element of the table will stick to the top of the browser window when the user has scrolled past the top of the table.
-
-#### Example
-
 non-jQuery
 
 ```javascript
-wmResponsiveTable(document.getElementById("example"), {pinnedColumns: 1, fixedHeader: true});
+wmResponsiveTable(document.getElementById("example"), {
+    pinnedColumns: 1,
+    fixedHeader: true
+});
 ```
 
 jQuery/Zepto
 
 ```javascript
-$("#example").wmResponsiveTable({pinnedColumns: 1, fixedHeader: true})
+$("#example").wmResponsiveTable({
+    pinnedColumns: 1,
+    fixedHeader: true
+})
 ```
 
