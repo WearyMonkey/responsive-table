@@ -1,4 +1,4 @@
-(function (window, document, jQuery, undefined) {
+(function (window, document, undefined) {
     "use strict";
 
     function wmResponsiveTable(tableEle, options) {
