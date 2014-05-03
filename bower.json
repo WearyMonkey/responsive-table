@@ -1,0 +1,28 @@
+{
+  "name": "wm-responsive-table",
+  "version": "0.0.1",
+  "homepage": "https://github.com/WearyMonkey/responsive-table",
+  "authors": [
+    "Toby Rahilly <toby.rahilly@gmail.com>"
+  ],
+  "description": "Responsive data tables that work on mobile devices.",
+  "main": [
+      "dist/wm-responsive-table.js",
+      "dist/wm-responsive-table.css"
+  ],
+  "moduleType": [
+    "globals"
+  ],
+  "keywords": [
+    "table",
+    "responsive",
+    "data",
+    "mobile"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    ".sass-cache"
+  ]
+}

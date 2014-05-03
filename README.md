@@ -17,15 +17,21 @@ the use can scroll the other columns horizontally.
 
 ## Installation
 
-1. todo bower/browserify
+1. Install from bower
+
+```
+bower install wm-responsive-table
+```
+
+OR download the files under ```dist```
 
 2. Include Style sheet in head
 
 ```html
 <head>
-    .
+    ...
     <link rel="stylesheet" type="text/css" href="bower-components/wm-responsive-table/dist/wm-responsive-table.css">
-    .
+    ...
 </head>
 ```
 
