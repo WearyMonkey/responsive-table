@@ -5,7 +5,7 @@ the use can scroll the other columns horizontally.
 
 ## Demos
 
-* [Simple Data Table](https://rawgithub.com/WearyMonkey/responsive-table/master/examples/example.html)
+* [Simple Data Table](https://rawgithub.com/WearyMonkey/responsive-table/master/examples/example.html) [http://tinyurl.com/wmrtable]
 
 ## Features
 
