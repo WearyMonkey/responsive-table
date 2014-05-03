@@ -5,7 +5,7 @@ the use can scroll the other columns horizontally.
 
 ## Demos
 
-* [Simple Data Table](https://rawgithub.com/WearyMonkey/responsive-table/master/examples/example.html)
+* [Simple Data Table](https://rawgithub.com/WearyMonkey/responsive-table/master/examples/example.html) [http://tinyurl.com/wmrtable]
 
 ## Features
 
@@ -20,29 +20,29 @@ the use can scroll the other columns horizontally.
 
 1. Install from bower
 
-    ```
-    bower install wm-responsive-table
-    ```
+```
+bower install wm-responsive-table
+```
 
-    OR download the files under ```dist```
+OR download the files under ```dist```
 
 2. Include Style sheet in head
 
-    ```html
-    <head>
-        ...
-        <link rel="stylesheet" type="text/css" href="bower-components/wm-responsive-table/dist/wm-responsive-table.css">
-        ...
-    </head>
-    ```
+```html
+<head>
+    ...
+    <link rel="stylesheet" type="text/css" href="bower_components/wm-responsive-table/dist/wm-responsive-table.css">
+    ...
+</head>
+```
 
 3. Include JavaScript
 
-    ```html
-     <script src="bower-components/wm-responsive-table/dist/wm-responsive-table.js"></script>
-    ```
+```html
+ <script src="bower_components/wm-responsive-table/dist/wm-responsive-table.js"></script>
+```
 
-    If you are using jQuery, make sure you include wm-responsive-table after jQuery for the plugin to work.
+If you are using jQuery, make sure you include wm-responsive-table after jQuery for the plugin to work.
 
 ## Usage
 
