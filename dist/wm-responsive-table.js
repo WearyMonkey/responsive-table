@@ -2,6 +2,11 @@
     "use strict";
 
     /**
+     * Makes a table responsive, so that it can be viewed on a mobile device. Works by making parts of the table scrollable
+     * while pinning columns and the header.
+     *
+     * Implementation is done by creating two extra tables, one for the fixed columns, and one for the fixed header,
+     * and overlaying them on top of the original table.
      *
      * @param tableEle element of the html table to make responsive
      * @param options.pinnedColumns, the amount of columns that should be pinned to the left
@@ -51,7 +56,7 @@
                 onDocumentScroll(function () {
                     tableRect = tableEle.getBoundingClientRect();
                     tableIsBelowFold = tableRect.top < 0 && tableRect.bottom > 0;
-                    fixedHeadTableEle.style.display = tableIsBelowFold ? 'block' : 'none';
+                    toggleClass(fixedHeadTableEle,  ' wm-rt-fixed ', tableIsBelowFold);
                 });
             }
 
@@ -65,6 +70,16 @@
     }
 
     var scrollListeners = [];
+
+    function toggleClass(element, clazz, on) {
+        var className = element.className,
+            alreadyOn = className.indexOf(clazz) != -1;
+        if (on && !alreadyOn) {
+            element.className = className + clazz;
+        } else if (!on && alreadyOn) {
+            element.className = className.replace(clazz, '');
+        }
+    }
 
     function onDocumentScroll(callback) {
         if (!scrollListeners.length) {

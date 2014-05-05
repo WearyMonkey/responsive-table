@@ -65,6 +65,10 @@ $background-color: #fff;
                visibility: hidden;
                pointer-events: none;
             }
+
+           &.wm-rt-fixed {
+             display: block;
+           }
          }
       }
    }

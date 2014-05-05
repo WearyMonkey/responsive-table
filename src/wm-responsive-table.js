@@ -56,7 +56,7 @@
                 onDocumentScroll(function () {
                     tableRect = tableEle.getBoundingClientRect();
                     tableIsBelowFold = tableRect.top < 0 && tableRect.bottom > 0;
-                    fixedHeadTableEle.style.display = tableIsBelowFold ? 'block' : 'none';
+                    toggleClass(fixedHeadTableEle,  ' wm-rt-fixed ', tableIsBelowFold);
                 });
             }
 
@@ -70,6 +70,16 @@
     }
 
     var scrollListeners = [];
+
+    function toggleClass(element, clazz, on) {
+        var className = element.className,
+            alreadyOn = className.indexOf(clazz) != -1;
+        if (on && !alreadyOn) {
+            element.className = className + clazz;
+        } else if (!on && alreadyOn) {
+            element.className = className.replace(clazz, '');
+        }
+    }
 
     function onDocumentScroll(callback) {
         if (!scrollListeners.length) {

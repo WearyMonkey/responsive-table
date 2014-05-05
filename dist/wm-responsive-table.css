@@ -52,4 +52,7 @@
     visibility: hidden;
     pointer-events: none;
   }
+  .wm-rt-container table.wm-rt-fixed-header.wm-rt-fixed {
+    display: block;
+  }
 }
